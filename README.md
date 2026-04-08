@@ -132,3 +132,5 @@ git add .
 git commit -m "작업 중인 내용 저장"
 git pull origin main
 ```
+
+#1
