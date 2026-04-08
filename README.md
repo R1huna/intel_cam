@@ -86,7 +86,7 @@ git add [파일 선택]
 git commit -m "수정 사항 내용"
 ```
 
-3. git status 로 마지만 확인
+3. git status 로 마지막 확인
 
 4. git push 하여 github에 등록
 
@@ -96,13 +96,13 @@ git commit -m "수정 사항 내용"
 
 2. 왼쪽에 있는 New pull request 클릭
 
-3. 자신이 올린 Commit을 선택
+3. 자신이 올린 branch을 선택
 
 4. Merge 요청 보내기
 
 ### github pull (불러오기)
-main branch를 불러와서 버전 맞추기
-1. 메인 브랜치로 이돌
+메인 브랜치의 최신 코드를 내 로컬로 가져오기
+1. 메인 브랜치로 이동
 ```bash
 git checkout main
 ```
