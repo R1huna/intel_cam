@@ -1,0 +1,14 @@
+# pip install -r requirements.txt
+
+# 이미지 처리 및 시스템 제어
+opencv-python
+numpy
+
+# 딥러닝 프레임워크 (YOLO 실행 필수)
+torch
+torchvision
+
+# YOLOv11 및 Intel OpenVINO 최적화 관련
+ultralytics
+openvino
+nncf

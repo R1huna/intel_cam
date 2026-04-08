@@ -1,0 +1,10 @@
+# pip install -r requirements.txt
+
+
+# 핵심 라이브러리
+opencv-python
+numpy
+
+# RealSense 공식 SDK (필요 시 주석 해제 후 설치)
+pyrealsense2
+
