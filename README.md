@@ -70,3 +70,6 @@ pip install pyrealsense2
 
 
 s를 누르면 연속 저장, 다시 s 를 누르면 연속 저장 중지 q를 누르면 종료
+
+### 인원
+1. 
