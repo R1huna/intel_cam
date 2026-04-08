@@ -1,0 +1,59 @@
+# 📸 Camera Image Save Models (Intel & Royche)
+
+이 프로젝트는 Intel RealSense 카메라와 Royche(일반 웹캠) 카메라를 사용하여 영상 스트림을 받아오고, 이미지를 저장하는 파이썬(Python) 스크립트 모음입니다.
+
+## 📂 폴더 구조 및 설명
+
+이 저장소는 크게 인텔 카메라용 폴더와 로이체 카메라용 폴더로 나뉘어 있습니다.
+
+### 1. `intel_cam/` (Intel RealSense 전용)
+* `00_cam_num.py`: 현재 PC에 연결된 인텔 카메라의 장치 번호(Index)를 확인하는 스크립트입니다.
+* `01_cam_save_image_rgb.py`: 인텔 카메라의 일반 컬러(RGB) 화면을 띄우고 이미지를 저장합니다.
+* `02_cam_save_image_depth.py`: 인텔 카메라의 깊이(Depth) 센서를 활용하여 거리 정보가 포함된 화면을 띄우고 이미지를 저장합니다.
+* `requirements.txt`: 인텔 카메라 구동에 필요한 파이썬 패키지 목록입니다. (예: `pyrealsense2`, `opencv-python`)
+
+### 2. `royche_cam/` (Royche 및 일반 웹캠 전용)
+* `00_cam_num.py`: 연결된 웹캠의 장치 번호를 확인하는 스크립트입니다.
+* `01_cam_save_image.py`: 웹캠 화면을 띄우고 RGB 이미지를 저장합니다.
+* `requirements.txt`: 웹캠 구동에 필요한 파이썬 패키지 목록입니다. (예: `opencv-python`)
+
+---
+
+## 🚀 사용 방법 (이렇게 하면 됩니다!)
+
+본 프로젝트는 **Ubuntu 환경**을 기준으로 작성되었습니다.
+
+### Step 1. 패키지 설치
+각 카메라 폴더에 있는 `requirements.txt`를 이용해 필요한 라이브러리를 먼저 설치해 주세요.
+```bash
+# 인텔 카메라를 사용할 경우
+cd intel_cam
+python3 -m venv [이름]
+pip install -r requirements.txt
+
+# 로이체 카메라를 사용할 경우
+cd royche_cam
+python3 -m venv [이름]
+pip install -r requirements.txt
+```
+
+### Step 2. 실행
+```bash
+# 인텔 카메라 intel_cam/
+
+# 인텔 카메라 상태 확인
+00_cam_num.py 
+
+# 사진 데이터셋 확보
+01_cam_save_image_rgb.py
+02_cam_save_image_depth.py
+```
+```bash
+# 로이제 카메라 royche_cam/
+
+# 로이제 카메라 상태 확인
+00_cam_num.py 
+
+# 사진 데이터셋 확보
+01_cam_save_image.py
+```
