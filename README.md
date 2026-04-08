@@ -105,6 +105,9 @@ git commit -m "수정 사항 내용"
 1. 메인 브랜치로 이동
 ```bash
 git checkout main
+
+# 요즘은 이것도 많이 사용한다고 함
+git switch main
 ```
 
 2. github에서 main branch 불러오기
