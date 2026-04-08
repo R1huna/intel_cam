@@ -99,3 +99,33 @@ git commit -m "수정 사항 내용"
 3. 자신이 올린 Commit을 선택
 
 4. Merge 요청 보내기
+
+### github pull (불러오기)
+main branch를 불러와서 버전 맞추기
+1. 메인 브랜치로 이돌
+```bash
+git checkout main
+```
+
+2. github에서 main branch 불러오기
+```bash
+git pull origin main
+```
+
+====================
+오류 발생 시
+수정 중인 파일이 있어서 pull을 할 수 없다
+
+1. 
+```bash
+git stash               # 현재 수정 사항을 임시 보관함에 넣기
+git pull origin main    # 최신 코드 가져오기
+git stash pop           # 임시 보관했던 내 작업 다시 꺼내기
+```
+
+2. 이 방법으로 하면 충돌이 발생할 가능서 있음. 충돌 해결 후 commit 하기
+```bash
+git add .
+git commit -m "작업 중인 내용 저장"
+git pull origin main
+```
