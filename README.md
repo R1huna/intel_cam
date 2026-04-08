@@ -57,3 +57,16 @@ pip install -r requirements.txt
 # 사진 데이터셋 확보
 01_cam_save_image.py
 ```
+
+### 주의점
+
+인텔 카메라 수정시 pyrealsense2 있는지 확인하기
+없으면 IR 채널만 불러와서 출력될 가능성이 있음
+```bash
+pip install pyrealsense2
+```
+
+사진 데이터셋 dataset/images 에 저장됨
+
+
+s를 누르면 연속 저장, 다시 s 를 누르면 연속 저장 중지 q를 누르면 종료
