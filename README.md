@@ -71,5 +71,28 @@ pip install pyrealsense2
 
 s를 누르면 연속 저장, 다시 s 를 누르면 연속 저장 중지 q를 누르면 종료
 
-### 인원
-1. 
+### github로 push 하는 법
+VSCode에서 수정한 코드를 github에 push하는 법
+1. git status 로 commit할 파일 이름 및 올리면 안될 파일이 있는지 확인
+
+2. VSCode 에서 수정한 코드를 commit을 한다 (단 터미널에서 하든 VSCode에서 하든 한곳에서 작업 실행)
+```bash
+git add [파일 선택]
+```
+```bash
+git commit -m "수정 사항 내용"
+```
+
+3. git status 로 마지만 확인
+
+4. git push 하여 github에 등록
+
+### github 협업(pull requests)
+수정된 코드를 적용 시키는 법
+1. github에서 왼쪽 상단에 있는 pull requests를 클릭
+
+2. 왼쪽에 있는 New pull request 클릭
+
+3. 자신이 올린 Commit을 선택
+
+4. 
