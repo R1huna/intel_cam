@@ -20,7 +20,7 @@ config = rs.config()
 
 # 3. 명시적으로 RGB(Color) 스트림만 활성화
 # 해상도 640x480, 포맷 BGR8(OpenCV 기본 포맷), 30fps 설정
-config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
+config.enable_stream(rs.stream.color, 1280, 720, rs.format.bgr8, 30)
 
 # 파이프라인 시작 및 카메라 프로파일 획득
 try:
