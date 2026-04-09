@@ -8,7 +8,7 @@ import numpy as np
 import pyrealsense2 as rs
 
 # 1. 이미지를 저장할 폴더 설정 및 생성
-save_dir = 'dataset/images'
+save_dir = 'dataset/intel_images'
 os.makedirs(save_dir, exist_ok=True)
 
 pipeline = rs.pipeline()
@@ -57,7 +57,7 @@ try:
         # 3. 's' 키를 누르면 RGB만 저장
         if key == ord('s'):
             # 파일 경로 지정 (예: dataset/images/capture_0000.jpg)
-            file_path = f"{save_dir}/capture_{count:04d}.jpg"
+            file_path = f"{save_dir}/{count:04d}_intel_d435.jpg"
             
             # 💡 hstack으로 합쳐진 'images'가 아니라, 순수 RGB인 'color_image'를 저장합니다.
             cv2.imwrite(file_path, color_image)
